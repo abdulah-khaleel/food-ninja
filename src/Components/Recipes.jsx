@@ -9,11 +9,14 @@ const Main = () => {
   return (
     <main className="px-16 py-6 bg-gray-100 md:col-span-2">
       <div className="flex justify-center md:justify-end">
-        <a className="btn text-primary  md:border-2 border-primary " href="#">
+        <a
+          className="btn text-primary  md:border-2 border-primary hover:text-white hover:bg-primary transition duration-200 hover:scale-110"
+          href="#"
+        >
           Log in
         </a>
         <a
-          className="btn text-primary ml-2  md:border-2 border-primary"
+          className="btn text-primary ml-2  md:border-2 border-primary hover:text-white hover:bg-primary transition duration-200 hover:scale-110 "
           href="#"
         >
           Sign up
@@ -41,7 +44,9 @@ const Main = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="text-secondary-200 bg-secondary-100 btn">Load more</div>
+        <div className="text-secondary-200 bg-secondary-100 btn hover:shadow-inner">
+          Load more
+        </div>
       </div>
     </main>
   );

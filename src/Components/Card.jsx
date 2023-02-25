@@ -3,7 +3,7 @@ import Badge from './Badge';
 
 const Card = props => {
   return (
-    <div className="card">
+    <div className="card hover:shadow-lg">
       <img
         src={props.image}
         alt=""
