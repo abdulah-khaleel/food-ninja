@@ -4,9 +4,9 @@ const NavItem = props => {
   const currentPage = 'border-r-4 border-primary font-bold';
   return (
     <li
-      className={`text-gray-700 py-1 mr-1 ${props.activePage && currentPage} ${
-        !props.activePage && 'border-r-4 border-white'
-      }`}
+      className={`text-gray-700 py-1 mr-1 hover:font-bold transform transition ease-out duration-300 ${
+        props.activePage && currentPage
+      } ${!props.activePage && 'border-r-4 border-white'}`}
     >
       <a href="#">
         <span>{props.navItem}</span>

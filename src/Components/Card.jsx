@@ -3,7 +3,7 @@ import Badge from './Badge';
 
 const Card = props => {
   return (
-    <div className="card hover:shadow-lg">
+    <div className="card hover:shadow-lg cursor-pointer">
       <img
         src={props.image}
         alt=""
@@ -13,7 +13,7 @@ const Card = props => {
         <span className="font-bold">{props.title}</span>
         <span className="block text-gray-500 text-sm">Recipe by Mario</span>
       </div>
-      <Badge />
+      <Badge minutes={props.minutes} />
     </div>
   );
 };

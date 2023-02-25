@@ -13,7 +13,7 @@ const Nav = props => {
   return (
     <nav className="text-right">
       <div className="flex justify-between items-center">
-        <h1 className="font-bold uppercase p-4 border-b border-gray-100">
+        <h1 className="font-bold uppercase p-4 border-b border-gray-100 hover:text-gray-800 transform transition ease-out duration-300 ">
           <a href="/" className="">
             Food Ninja
           </a>

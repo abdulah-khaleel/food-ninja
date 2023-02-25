@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="wrapper text-gray-600 font-body grid md:grid-cols-3">
+    <div className=" text-gray-600 font-body grid md:grid-cols-3">
       <div className="md:col-span-1 md:flex md:justify-end">
         <Nav />
       </div>

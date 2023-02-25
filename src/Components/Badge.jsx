@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Badge = () => {
+const Badge = props => {
   return (
     <div className="badge">
       <svg
@@ -16,7 +16,7 @@ const Badge = () => {
         />
       </svg>
 
-      <span className="inline">25 mins</span>
+      <span className="inline">{props.minutes} mins</span>
     </div>
   );
 };
