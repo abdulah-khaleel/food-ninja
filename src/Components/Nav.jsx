@@ -22,10 +22,19 @@ const Nav = props => {
           <img className="w-6" src={menuIcon} alt="menu-icon" />
         </div>
       </div>
-      {/* <ul className="text-sm mt-6 hidden md:block"> */}
       <ul className={`text-sm mt-6 ${isHidden ? 'hidden' : ' '} md:block`}>
-        <NavItem navItem={'Home'} icon={homeIcon} activePage={true} />
-        <NavItem navItem={'About'} icon={aboutIcon} />
+        <NavItem
+          activePage={!props.showAbout}
+          navItem={'Home'}
+          icon={homeIcon}
+          redirectHome={props.redirectHome}
+        />
+        <NavItem
+          activePage={props.showAbout}
+          navItem={'About'}
+          icon={aboutIcon}
+          redirectAbout={props.redirectAbout}
+        />
         <NavItem navItem={'Contact'} icon={contactIcon} />
       </ul>
     </nav>

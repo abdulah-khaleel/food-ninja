@@ -6,7 +6,9 @@ const NavItem = props => {
     <li
       className={`text-gray-700 py-1 mr-1 hover:font-bold transform transition ease-out duration-300 ${
         props.activePage && currentPage
-      } ${!props.activePage && 'border-r-4 border-white'}`}
+      }
+       ${!props.activePage && 'border-r-4 border-white'}`}
+      onClick={props.redirectHome || props.redirectAbout}
     >
       <a href="#">
         <span>{props.navItem}</span>
